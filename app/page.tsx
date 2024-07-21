@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center pt-28 pb-14">
       <div className="text-center">
-        <span className="border border-dashed border-[#D7D7D7] bg-[#f7f7f7] text-md text-[#333] rounded-md px-4 py-2 font-regular">
+        <span className="border border-[#E6E6E6] bg-[#F9F9F9] text-md font-medium text-[#121212] rounded-md px-4 py-2 font-regular">
           Developer-First Platform as a Service
         </span>
         <div>

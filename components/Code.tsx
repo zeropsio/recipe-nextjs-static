@@ -60,7 +60,7 @@ export function Code({ code, file, fileLink }: CodeBlockProps) {
       >
         {icon}
       </button>
-      <code className="text-[#585858] text-sm font-normal text-wrap">{code}</code>
+      <code className="text-[#585858] text-sm font-medium text-wrap">{code}</code>
       </pre>
     </pre>
   );
