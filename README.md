@@ -27,7 +27,7 @@ This recipe is ready for production as is, and will scale horizontally by adding
 <br/>
 
 ## Changes made over the default installation
-If you want to modify your existing Next.js app to efficiently run on Zerops, Follow these steps:
+If you want to modify your existing Next.js app to efficiently run on Zerops, Follow this step:
 
 1. Go to [`next.config.mjs`](https://github.com/zeropsio/recipe-nextjs-static/blob/main/next.config.mjs) and add `output: 'export'` to nextConfig.
 
