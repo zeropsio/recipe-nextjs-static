@@ -9,3 +9,9 @@ zerops:
         - out/~
     run:
       base: static
+
+  # you can ignore this, it's used
+  # for a version of recipe with
+  # both static and ssr versions
+  - setup: staticapp
+    extends: app
