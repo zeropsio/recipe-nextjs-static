@@ -10,7 +10,7 @@ This recipe showcases the Static version, see [zeropsio/recipe-nextjs-nodejs](ht
 
 ## Deploy to Zerops
 
-You can either click the deploy button to deploy directly on Zerops, or manually copy the [import yaml](https://github.com/zeropsio/recipe-nextjs-nodejs/blob/main/zerops-project-import.yml) to the import dialog in the Zerops app.
+You can either click the deploy button to deploy directly on Zerops, or manually copy the [import yaml](https://github.com/zeropsio/recipe-nextjs-static/blob/main/zerops-project-import.yml) to the import dialog in the Zerops app.
 
 [![Deploy on Zerops](https://github.com/zeropsio/recipe-shared-assets/blob/main/deploy-button/green/deploy-button.svg)](https://app.zerops.io/recipe/nextjs-static)
 
@@ -27,7 +27,20 @@ This recipe is ready for production as is, and will scale horizontally by adding
 <br/>
 
 ## Changes made over the default installation
-If you want to modify your existing Remix app to efficiently run on Zerops, there are no changes needed in the codebase on top of the standard installation, just add [zerops.yml](https://github.com/zeropsio/recipe-nextjs-nodejs/blob/main/zerops.yml) to your repository.
+If you want to modify your existing Next.js app to efficiently run on Zerops, Follow these steps:
+
+1. Go to [`next.config.mjs`](https://github.com/zeropsio/recipe-nextjs-static/blob/main/next.config.mjs) and add `output: 'export'` to nextConfig.
+
+```javascript
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    output: 'export',
+};
+
+export default nextConfig;
+```
+
+Now, there are no changes needed in the codebase on top of the standard installation, just add [zerops.yml](https://github.com/zeropsio/recipe-nextjs-static/blob/main/zerops.yml) to your repository.
 
 <br/>
 <br/>

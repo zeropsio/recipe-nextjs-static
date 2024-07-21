@@ -6,5 +6,5 @@ project:
 services:
   - hostname: app
     type: static
-    buildFromGit: https://github.com/zeropsio/recipe-nextjs-nodejs
+    buildFromGit: https://github.com/zeropsio/recipe-nextjs-static
     enableSubdomainAccess: true
