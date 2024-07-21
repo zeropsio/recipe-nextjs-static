@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <div className="bottom-0 flex justify-center pb-8">
+    <div className="bottom-0 flex justify-center pb-16">
       <p className="font-medium text-[#616A71]">
         Powered By{" "}
         <span className="font-bold">

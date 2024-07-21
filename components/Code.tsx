@@ -35,7 +35,13 @@ const CheckIcon = () => (
   </svg>
 );
 
-export function Code({ code }: { code: string }) {
+interface CodeBlockProps {
+  code: string;
+  file: string;
+  fileLink: string;
+}
+
+export function Code({ code, file, fileLink }: CodeBlockProps) {
   const [icon, setIcon] = useState(CopyIcon);
 
   const copy = async () => {
@@ -45,14 +51,17 @@ export function Code({ code }: { code: string }) {
   };
 
   return (
-    <pre className="bg-[#1E1E1E] rounded-md p-8 my-8 relative">
+    <pre className="border-[#E6E6E6] border-r border-b border-l border-t h-full rounded-md">
+      <a href={fileLink} target="_blank" className="link bg-[#F9F9F9] border-[#E6E6E6] border-b flex justify-center py-1 text-sm">{file}</a>
+      <pre className="bg-[#fff] rounded-b-md  p-8 relative">
       <button
         onClick={copy}
-        className="absolute top-4 right-4  p-2 rounded-md bg-[#3a3a3a] text-white"
+        className="absolute top-4 right-4 p-2 rounded-md bg-[#F9F9F9] hover:bg-[#F4F3F3] copybtn duration-300  text-[#444]"
       >
         {icon}
       </button>
-      <code className="text-[#3DC9B0] text-sm">{code}</code>
+      <code className="text-[#585858] text-sm font-normal text-wrap">{code}</code>
+      </pre>
     </pre>
   );
 }
