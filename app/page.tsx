@@ -44,6 +44,7 @@ export default function Home() {
       <div className="flex justify-center pt-24">
         <Steps />
       </div>
+      <Register/>
     </main>
   );
 }
