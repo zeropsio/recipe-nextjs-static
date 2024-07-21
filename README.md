@@ -17,7 +17,7 @@ You can either click the deploy button to deploy directly on Zerops, or manually
 <br/>
 
 ## Recipe features
-- A **Next.js 14 SSG** version with App Router running on a load balanced **Zerops Static** service.
+- Latest version of **Next.js 14+** with SSG running on a load balanced **Zerops Static** service.
 
 <br/>
 
