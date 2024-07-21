@@ -4,11 +4,8 @@ zerops:
       base: nodejs@20
       buildCommands:
         - pnpm i
-        - pnpm run build
-      deployFiles: ./
+        - pnpm build
+      deployFiles:
+        - out/~
     run:
-      base: nodejs@20
-      ports:
-        - port: 3000
-          httpSupport: true
-      start: pnpm start
+      base: static
