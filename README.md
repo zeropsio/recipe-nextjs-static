@@ -1,6 +1,6 @@
 # Zerops x Next.js - Static
 
-Next.js is a React Framework for fast, dynamic full-stack web apps with both server-side rendering and static site generation. <a href="https://zerops.io/" target="_blank">Zerops</a> makes deploying and running Next.js apps, both server side rendered and static, a breeze.
+Next.js is a React framework for fast, dynamic full-stack web apps with both server-side rendering and static site generation. <a href="https://zerops.io/" target="_blank">Zerops</a> makes deploying and running Next.js apps, both server side rendered and static, a breeze.
 
 This recipe showcases the SSG Static version, see [zeropsio/recipe-nextjs-nodejs](https://github.com/zeropsio/recipe-nextjs-nodejs) for the Node.js version.
 
